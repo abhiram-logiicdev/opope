@@ -19,8 +19,8 @@ InstallDir           ?= $(VendorDir)/install
 # Verilator
 VerilatorVersion     ?= v5.034
 VerilatorInstallDir  := $(InstallDir)/verilator
-VerilatorCC          := gcc-11.2.0
-VerilatorCXX         := g++-11.2.0
+VerilatorCC          := gcc-11
+VerilatorCXX         := g++-11
 # GCC
 GccInstallDir        := $(InstallDir)/riscv
 Gcc                  ?= $(GccInstallDir)/bin/

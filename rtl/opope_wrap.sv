@@ -67,6 +67,7 @@ localparam hci_size_parameter_t `HCI_SIZE_PARAM(tcdm) = '{
   IW:  DEFAULT_IW,
   EW:  EW,
   EHW: DEFAULT_EHW
+//  FD: DEFAULT_FD
 };
 
 hci_core_intf #(
@@ -123,7 +124,7 @@ opope_top #(
   .rst_ni             ( rst_ni             ),
   .test_mode_i        ( test_mode_i        ),
   .evt_o              ( evt_o              ),
-  .busy_o             (                    ),
+  .busy_o             ( busy_o             ),
   .tcdm               ( tcdm               ),
   .periph             ( periph             )
 );
